@@ -28,7 +28,7 @@ public class CardTrick {
             c.setSuit(Card.SUITS[(int)(Math.random()* 3 + 0)]);
             
             magicHand[i] = c;
-            System.out.println(magicHand[i].getSuit()+ " " + magicHand[i].getValue());
+           // System.out.println(magicHand[i].getSuit()+ " " + magicHand[i].getValue());
         }
         
         //insert code to ask the user for Card value and suit, create their card
@@ -42,6 +42,13 @@ public class CardTrick {
         
         userCard.setSuit(userSuit);
         userCard.setValue(userValue);
+        
+        //adding a lucky card
+        Card luckyCard = new Card();
+        luckyCard.setValue(userValue);
+        luckyCard.setSuit(userSuit);
+        
+        magicHand[6] = luckyCard;
 
         System.out.println(userCard.getSuit()+ " " + userCard.getValue());
         // and search magicHand here
