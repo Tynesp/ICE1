@@ -11,7 +11,8 @@ package card;
  * @author srinivsi
  */
 
-
+//Timothy Nicolle
+//Student #991638508
 import java.util.Scanner;
 public class CardTrick {
     
